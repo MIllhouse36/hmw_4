@@ -72,6 +72,14 @@ for var i = 0; i <questionData.length; i++){
     var answer = button click event([answerString[i]])
     if (buttion  click event = correctAnswer)
 }
+function displayQuestions() {
+        var index = 0;
+        //answerA.addEventListener()
+        const element = testObj[index];
+        questionDisplayBox.innerHTML = testObj[index].questionString
+        console.log(element)
+    }
+}
 
 testObj.questions[i] = {
     answerarr1  : correct ,
@@ -95,4 +103,3 @@ if ( answerarr === correctAnswer){
     correctAnswerScore--;
 }
 
-# hmw_4
