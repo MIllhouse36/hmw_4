@@ -95,11 +95,12 @@ answerarr1 = answerA
 answerarr2 = answerB
 answerarr3 = answerC
 
-if ( answerarr === correctAnswer){
-    alert("correct!")
-    score++;
-}else {
-    alert("WRONG!!")
-    correctAnswerScore--;
-}
 
+//  functionparseAns(){
+//      if(answerchosen === correctAnswer[0]){
+//          correctAnswerScore++
+//      }
+//     }
+
+
+// Turn start button into "quit test" && "restart test button" 
