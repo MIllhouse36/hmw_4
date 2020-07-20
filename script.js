@@ -1,10 +1,12 @@
 var timerEl = document.getElementById("timer");
-var questionDisplayBox = document.querySelector("#question-display-box");
+var questionDisplayBox = document.querySelector("#question-display-box")
+var index = 0;;
 //var btnButtons  = document.getElementById("#answer-buttons");
+var btnAll = document.querySelector("#btnAll");
 var btnA = document.querySelector("#btnA");
 var btnB = document.querySelector("#btnB");
 var btnC = document.querySelector("#btnC");
-var goButton = document.querySelector("#goBtn");
+var goButton = document.querySelector("#goBtn"); 
 var leaderScores = document.getElementById("#leaderscores");
 var correctAnswerScore = 0;
 var testObj = [
@@ -68,7 +70,7 @@ var testObj = [
 
 function displayQuestions() {
     displayAnswers()
-    var index = 0;
+    
     questionDisplayBox.innerHTML = testObj[index].questionString;
     index++
 
@@ -82,7 +84,6 @@ function displayQuestions() {
                 questionDisplayBox.innerHTML= "Incorrect";
             }
         });
-
 
         console.log(testObj[index].correctAnswer)
         var index2 = 1;
@@ -106,7 +107,9 @@ function displayQuestions() {
         });
     } 
 }
-
+testObj[0].ansArr.forEach(function(element) {
+    console.log(element)
+});
 //console.log(testObj[0].ansArr[0]);
 
 //  testObj is the object that holds the question/answers/correct  objects holds que
